@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month wise Stats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        .navbar-brand{
+          font-size: larger;
+          font-weight: bold;
+          color: black;
+        }
+        .nav-link{
+          color: black;
+        }
+        #h{
+          color: black;
+        }
+        #q{
+          font-size: 25px;
+        }
+        #navbarDropdown{
+          color: aliceblue;
+          background-color: green;
+        }
+        .red{
+          background-color: red;
+        }
+        #w{
+            font-size: 20px;
+        }
+        #m{
+            text-align: center;
+            text-decoration: underline;
+        }
+        #c{
+      background-color: skyblue;
+    }
+    
+    
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src = "../assets/cloud-rain-fill.svg"/> Salem Weather Channel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link active" id = "h"aria-current="page" href="../index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id = "c"aria-current="page" href="./salem.html">Current Weather </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Rain info
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./Rain info.html">Annual Rain</a></li>
+                  <li><a class="dropdown-item" href="./Monthly rain.html">Monthly Rain</a></li>
+                  <li><a class="dropdown-item" href="./Day wise.html">Day wise Rain</a></li>
+                  <li><a class="dropdown-item" href="./More Status.html">More Stats</a></li>
+                </ul>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href = "./gallery.html">Gallery </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href = "https://maps.app.goo.gl/yfhKcQ2sKHCcGKVx8">Location </a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./About us (light mode).html">About us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href = "https://forms.gle/FUFUj4cWu2crGbJX6">Feedback </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1 id = "m"> Monthly Rain</h1>
+      <p id = "w">Which month of the year does it rain the most ?<p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Month</th>
+            <th scope="col">Rainy days</th>
+            <th scope="col">Rain</th>
+            <th scope="col">Average Rain</th>
+            <th scope="col">Average Rainy days</th>
+            <th scope="col">100 year Average</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">September</th>
+            <td>104</td>
+            <td >2007.5</td>
+            <td >200.75</td>
+            <td>10.40</td>
+            <td>180</td>
+          </tr>
+          <tr>
+            <th scope="row">October</th>
+            <td>90</td>
+            <td >1616.2</td>
+            <td >161.162</td>
+            <td>9</td>
+            <td>180</td>
+          </tr>
+          <tr>
+            <th scope="row">July</th>
+            <td>76</td>
+            <td >1441.5</td>
+            <td >144.15</td>
+            <td>7.60</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <th scope="row">May</th>
+            <td>88</td>
+            <td >1242</td>
+            <td >124.2</td>
+            <td>8.80</td>
+            <td>110</td>
+          </tr>
+          <tr>
+            <th scope="row">August</th>
+            <td>76</td>
+            <td >1441.5</td>
+            <td >144.15</td>
+            <td>7.60</td>
+            <td>140</td>
+          </tr>
+          <tr>
+            <th scope="row">November</th>
+            <td>80</td>
+            <td >1021</td>
+            <td >102.10</td>
+            <td>8</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <th scope="row">June</th>
+            <td>59</td>
+            <td >793.5</td>
+            <td >79.35</td>
+            <td>5.90</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <th scope="row">April</th>
+            <td>35</td>
+            <td >697.0</td>
+            <td >69.70</td>
+            <td>3.50</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <th scope="row">March</th>
+            <td>15</td>
+            <td >262</td>
+            <td >26.20</td>
+            <td>1.50</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">December</th>
+            <td>34</td>
+            <td >282.5</td>
+            <td >28.25</td>
+            <td>3.40</td>
+            <td>35</td>
+          </tr>
+          <tr>
+            <th scope="row">September</th>
+            <td>104</td>
+            <td >2007.5</td>
+            <td >200.75</td>
+            <td>10.40</td>
+            <td>180</td>
+          </tr>
+          <tr>
+            <th scope="row">January</th>
+            <td>10</td>
+            <td >83</td>
+            <td >8.30</td>
+            <td>1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th scope="row">February</th>
+            <td>1</td>
+            <td >2</td>
+            <td >0.20</td>
+            <td>0.1</td>
+            <td>-</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      <footer>
+        <br>
+        <p> &nbsp;&nbsp;&nbsp;Value of rain measured are in millimeter(mm)</p>
+        <p> &nbsp;&nbsp;&nbsp;The measured rainfall is only at <a href = "https://maps.app.goo.gl/yfhKcQ2sKHCcGKVx8" >Location</a></p>
+        <p> &nbsp;&nbsp;&nbsp;To know more about daily rain stats vist <a href = "https://docs.google.com/spreadsheets/d/1YG1W6bbga-RhrMzG1Qd6AkEuu84_rkfZMUhPbPspR80/edit?gid=1264772398#gid=1264772398" >Day wise stats</a></p>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      
+    </body>

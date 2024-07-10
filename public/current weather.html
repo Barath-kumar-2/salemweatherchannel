@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        .navbar-brand{
+          font-size: larger;
+          font-weight: bold;
+          color: black;
+        }
+        .nav-link{
+          color: black;
+        }
+        #h{
+          color: black;
+        }
+        #q{
+          font-size: 25px;
+        }
+        #navbarDropdown{
+          color: aliceblue;
+          background-color: green;
+        }
+        .red{
+          background-color: red;
+        }
+        #w{
+            font-size: 20px;
+        }
+        #m{
+            text-align: center;
+            text-decoration: underline;
+        }
+        #c{
+      background-color: skyblue;
+    }
+    #f, #fu, #ck, #ft, #rt, #su, #sus,#des,#fr{
+        font-size: 20px;
+        
+    }
+    #fu{
+        margin-top: 150px;
+    }
+    h1{
+       text-align: center;    
+    }
+    
+    
+    
+      </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src = "../assets/cloud-rain-fill.svg"/> Salem Weather Channel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link active" id = "h"aria-current="page" href="../index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id = "c"aria-current="page" href="./salem.html">Current Weather </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Rain info
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./Rain info.html">Annual Rain</a></li>
+                  <li><a class="dropdown-item" href="./Monthly rain.html">Monthly Rain</a></li>
+                  <li><a class="dropdown-item" href="./Day wise.html">Day wise Rain</a></li>
+                  <li><a class="dropdown-item" href="./More Status.html">More Stats</a></li>
+                </ul>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href = "./gallery.html">Gallery </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href = "https://maps.app.goo.gl/yfhKcQ2sKHCcGKVx8">Location </a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./About us (light mode).html">About us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href = "https://forms.gle/FUFUj4cWu2crGbJX6">Feedback </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <a href = "./current weather.html"> Check for Another City</a>
+      <h1 class = "city" id ="fu"></h1>
+      <h1 class = "desc" id = "des"></h1> 
+    <h1 class = "temp" id = "f"></h1> 
+    <h1 class = "feelslike" id = "rt">  </h1>
+    <h1 class = "humdity" id ="ck"></h1>
+    <h1 class = "windspeed" id ="ft">  </h1>
+    <h1 class = "winddirect" id ="fr">  </h1>
+    <h1 class = "Sunrise" id ="su">  </h1>
+    <h1 class = "Sunset" id ="sus">  </h1>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+   <script src = "./currentweather.js" ></script> 
+   <footer>
+    <br><br><br><br><br><br><br><br>
+    <p> If it takes too long to respond check your internet connection</p>
+  </footer>
+</body>
+</html>

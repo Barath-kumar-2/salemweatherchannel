@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <style>
+    .navbar-brand{
+      font-size: larger;
+      font-weight: bold;
+      color: black;
+    }
+    .nav-link{
+      color: black;
+    }
+    #navbarDropdown{
+          color: aliceblue;
+          background-color: green;
+        }
+        #c{
+      background-color: skyblue;
+    }
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    #i , #v, #r{
+      width: 300px;
+    }
+    #vi, #im{
+      text-decoration: underline;
+    }
+    
+    
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src = "../assets/cloud-rain-fill.svg"/> Salem Weather Channel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link active" id = "h"aria-current="page" href="../index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id = "c"aria-current="page" href="./salem.html">Current Weather </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Rain info
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./Rain info.html">Yearwise Rain</a></li>
+                  <li><a class="dropdown-item" href="./Monthly rain.html">Month wise Rain</a></li>
+                  <li><a class="dropdown-item" href="./Day wise.html">Day wise Rain</a></li>
+                  <li><a class="dropdown-item" href="#">More Stats</a></li>
+                </ul>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link" href = "https://maps.app.goo.gl/yfhKcQ2sKHCcGKVx8">Gallery </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href = "https://maps.app.goo.gl/yfhKcQ2sKHCcGKVx8">Location </a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./About us (light mode).html">About us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href = "https://forms.gle/FUFUj4cWu2crGbJX6">Feedback </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class = "img-gallery">
+        <h1 id = "im"> Images</h1>
+        <img src ="../assets/Logo.jpg" width="400px" height = "400px"/>
+        <img src = "../assets/WhatsApp Image 2024-07-06 at 19.41.53_945f306f.jpg" width="400px" height = 400px/>
+        <img src = "../assets/WhatsApp Image 2024-07-06 at 19.42.24_48d39057.jpg" width="500px" height = "400px"/>
+        <img src = "../assets/WhatsApp Image 2024-07-06 at 19.47.38_c2689d8e.jpg" width="350px" height = "700px"/>
+        <br>
+        <h1 id ="vi"> Videos (Click to play) </h1>
+        <video id = "i">
+          <source src = "../assets/WhatsApp Video 2024-07-06 at 19.41.44_2d9c70cd.mp4" type = "video/mp4" width="200px">
+        </video>
+        <video id = "r">
+          <source src = "../assets/WhatsApp Video 2024-07-06 at 19.47.18_2341fd76.mp4" type = "video/mp4">
+        </video>
+        <video id = "v">
+          <source src = "../assets/WhatsApp Video 2024-07-06 at 19.53.46_4e762107.mp4" type = "video/mp4">
+        </video>
+      </div>
+      <script>
+        var video = document.getElementById("v");
+        video.addEventListener("click",function(){
+          if (video.paused == false) {
+            video.pause();
+            video.firstChild.nodeValue = 'Play';
+        } else {
+            video.play();
+            video.firstChild.nodeValue = 'Pause';
+        }
+        })
+        var video2 = document.getElementById("r");
+        video2.addEventListener("click",function(){
+          if (video2.paused == false) {
+            video2.pause();
+            video2.firstChild.nodeValue = 'Play';
+        } else {
+            video2.play();
+            video2.firstChild.nodeValue = 'Pause';
+        }
+        })
+        var video1 = document.getElementById("i");
+        video1.addEventListener("click",function(){
+          if (video1.paused == false) {
+            video1.pause();
+            video1.firstChild.nodeValue = 'Play';
+        } else {
+            video1.play();
+            video1.firstChild.nodeValue = 'Pause';
+        }
+        })
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+</body>
+</html>
