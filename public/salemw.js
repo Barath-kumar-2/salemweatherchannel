@@ -33,7 +33,7 @@ else if (data.wind.deg >= 260 && data.wind.deg <= 289){
     document.querySelector(".feelslike").innerHTML ="Feels Like = " + (data.main.feels_like) + "⁰C";
     document.querySelector(".humdity").innerHTML = "Humidity = " + (data.main.humidity) + "%";
     document.querySelector(".windspeed").innerHTML ="Wind Speed = " + (data.wind.speed) + " m/s";
-    document.querySelector(".winddirect").innerHTML ="Wind Speed = " + (data.wind.deg) + " " + wind;
+    document.querySelector(".winddirect").innerHTML ="Wind Direction = " + (data.wind.deg) + " ⁰" + wind;
     document.querySelector(".Sunrise").innerHTML = "Sunrise at " + (new Date((data.sys.sunrise) * 1000).toTimeString());
     document.querySelector(".Sunset").innerHTML = "Sunset at " + (new Date((data.sys.sunset) * 1000).toTimeString());
 }
